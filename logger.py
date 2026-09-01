@@ -1,6 +1,8 @@
 import logging
+import os
 from config import LOG_FOLDER
 
+os.makedirs(LOG_FOLDER, exist_ok=True)
 
 def get_logger():
     logging.basicConfig(level=logging.INFO,
