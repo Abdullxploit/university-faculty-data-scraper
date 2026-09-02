@@ -79,7 +79,7 @@ def main():
 
     if Failed:
         logger.warning("Failed Universities: %s",
-                       failed)
+                       Failed)
     invalid_saved = save_invalid_records(invalid_records)
 
     if all_records:
@@ -126,16 +126,5 @@ def main():
     )
 
 
-
-
-
-
-
 if __name__ == "__main__":
     main()
-
-
-
-
-
-
